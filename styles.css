@@ -81,6 +81,7 @@ section {
     align-items: center;
     padding: 60px 15%;
     background-color: var(--cor-secundaria);
+    ;
 }
 
 section img {
@@ -113,7 +114,7 @@ section div button {
     background: var(--cor-acento);
     height: 50px;
     width: 180px;
-    font-size: 15px; /* Aumentado para melhor visibilidade */
+    font-size: 15px;
     border: none;
     border-radius: 26px;
     cursor: pointer;
@@ -143,6 +144,7 @@ section div button:hover {
     border-radius: 20px;
     padding: 20px 35px;
     text-align: center;
+    margin: 20px;
 }
 
 .card img {
@@ -177,7 +179,8 @@ section div button:hover {
 
 .card-projetos {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-top: 100px;
 }
 
@@ -225,4 +228,102 @@ footer p {
 .social a:hover {
     transform: scale(1.3);
     transition: 0.5s;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio {
+        font-size: 24px;
+    }
+
+    li {
+        font-size: 18px;
+        margin-right: 15px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section img {
+        height: 300px;
+        margin: 0 auto 20px;
+    }
+
+    section div h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio {
+        font-size: 20px;
+    }
+
+    li {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    section div p {
+        font-size: 18px;
+    }
+
+    section div button {
+        width: 150px;
+        height: 40px;
+    }
+
+    .card {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .card-projetos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 15px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    section div h2 {
+        font-size: 30px;
+    }
+
+    section div p {
+        font-size: 16px;
+    }
+
+    footer h5 {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
 }
