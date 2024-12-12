@@ -2,6 +2,7 @@
     --cor-principal: #0B192C; /* Azul marinho */
     --cor-secundaria: #1E3E62; /* Cinza claro */
     --cor-acento: #FF6500; /* Amarelo */
+}
 
 * {
     margin: 0;
@@ -23,9 +24,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 25px;
+    padding: 25px 30px;
 }
 
 .portfolio {
@@ -47,8 +46,8 @@ li {
     cursor: pointer;
 }
 
-li:hover {
-    color: var(--cor-acento);
+li :hover {
+    color: #FF6500;
     transition: 0.5s;
 }
 
@@ -89,7 +88,6 @@ section img {
     border-radius: 100%;
     border: 2px solid var(--cor-acento);
     margin-right: 30px;
-    ;
 }
 
 section a {
@@ -115,7 +113,7 @@ section div button {
     background: var(--cor-acento);
     height: 50px;
     width: 180px;
-    font-size: 10px;
+    font-size: 15px; /* Aumentado para melhor visibilidade */
     border: none;
     border-radius: 26px;
     cursor: pointer;
@@ -129,8 +127,7 @@ section div button:hover {
 
 .projetos {
     background-color: var(--cor-principal);
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding: 50px 0 100px;
 }
 
 .projetos h2 {
@@ -186,8 +183,7 @@ section div button:hover {
 
 footer {
     background-color: var(--cor-secundaria);
-    padding-top: 100px;
-    padding-bottom: 120px;
+    padding: 100px 0 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -202,8 +198,7 @@ footer h5 {
 footer p {
     color: white;
     font-size: 18px;
-    margin-top: 14px;
-    margin-bottom: 30px;
+    margin: 14px 0 30px;
 }
 
 .social {
